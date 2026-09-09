@@ -78,28 +78,6 @@ def make_my_gen_func(dicc):
         h_cross = np.where(np.isfinite(h_cross), h_cross, 0.0)
 
 
-        # plt.figure(figsize=(14, 5))
-
-        # plt.plot(
-        #     domain,
-        #     h.real,
-        #     label="Original NRH/NRHSur"
-        # )
-
-        # plt.plot(
-        #     times_rel,
-        #     h_plus,
-        #     "--",
-        #     label="Cubic spline interpolation"
-        # )
-
-        # plt.xlabel("Time", fontsize=16)
-        # plt.ylabel(r"$h_+$", fontsize=16)
-        # plt.legend()
-        # plt.grid(True)
-        # plt.tight_layout()
-        # plt.show()
-        # plt.savefig('despues2')
         return {
             "plus": h_plus,
             "cross": h_cross,
