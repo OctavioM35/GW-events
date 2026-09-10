@@ -1,4 +1,4 @@
-An algorithm which can use the neuronal network DANSur, NRH or NRSur to estimate GW signals parameters and plots the distributions obtained alongside with the results from Zenodo. 
+SEQUOIA is an algorithm which can use the neuronal network DANSur, NRH or NRSur to estimate GW signals parameters and plots the distributions obtained alongside with the results from Zenodo. 
 It works for a list of events, which are assumed to be named such as:
 
 ```text
