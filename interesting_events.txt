@@ -1,0 +1,26 @@
+You can use SEQUOIA for running some evebts
+I higly suggest using dansur as is the fastest surrogate model.
+You must write the path to your data folder and where do you want your results in config.py. You can also change your surrogate model there. 
+You can change the number of threads used by changing nparalle and npool, located in run_inference_bilby. This will be helpful for nrsur surrogate as it is computationally expensive due to the inclusion of precessiong effects.
+
+I will briefly discuss the characteristics of the events I have uploaded:
+
+-GW150914: This one was the first event ever detected.
+
+-GW200208_130117: average LVK detections.
+
+-GW230825_041334:  high spin bynaty system.
+
+-GW190701_203306: high mass event.	 (approximate total mass:  94,3 +12 -9.5 Solar masses.)
+
+-GW231119_075248: a very far away bynary system (approximate luminosty distance: 6700 + 3000 - 2500 Mpc, remeber 1 Mpc = 3,262*10^6 light years. )
+
+You can find more information about these and more events at: https://gwosc.org/eventapi/html/GWTC/
+
+It is not advaised to donwload data from this webpage, as it is heavy data. If you wish to test these or other events,
+you should write a code using "from gwosc import datasets" for the data and downloading LVK results from their Zenodo repositories
+(https://zenodo.org/communities/ligo-virgo-kagra/). I can provide this code or the recomended data events if you write to: octavioocta234@gmail.com.
+
+
+You can also play in waveform_drawer, which will calculate and plot a synthetic waveform obtained with parameters of your choise.
+
