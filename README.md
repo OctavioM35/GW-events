@@ -10,6 +10,7 @@ GWdate              <- Event directory
 └── GWdate.h5       <- Zenodo file
 ```
 
-These events were obtained used the python gwosc package and will not work for the events from GWTC webpage (though the script can easily be modified to make it work). Right now it usses the priors from the zenodo file but this can be configurated at will on the zenodo priors file. The duration, sampling frecuency and route to the directories with data are configurated in the configuration section. SEQUOIA follos an almost identical installation as DANSur, instructrions for this can be found in https://github.com/osvaldogramaxo/DANSur_22/
+These events were obtained used the python gwosc package and will not work for the events from GWTC webpage (though the script can easily be modified to make it work). Right now it usses the priors from the zenodo file but this can be configurated at will on the zenodo priors file. The duration, sampling frecuency and route to the directories with data are configurated in the configuration section. SEQUOIA follos an almost identical installation as DANSur, instructrions for this can be found in https://github.com/osvaldogramaxo/DANSur_22/. After that, install nrsur executing gwsurrogate.catalog.pull('NRSur7dq4') and nrh with gwsurrogate.catalog.pull('NRHybSur3dq8'). These 2 lines only need to be run once.
 
-Total pacakages needed: bilby, h5py, matplotlib, numpy os, gwpy, numpy, os plus all those needed to make dansur work (see previos link for reference). Keep in mind that DANSur has not been trained for low mass events (chirp mass <20 solar masses).
+
+Total pacakages needed: bilby, h5py, matplotlib, numpy os, gwpy, numpy, os plus all those needed to make dansur work (see previos link for reference). More information in the .txt attached. Keep in mind that DANSur has not been trained for low mass events (chirp mass <20 solar masses).
